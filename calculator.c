@@ -165,7 +165,7 @@ int diabetesCheck()
 void dCalculation(int diabetesCheck)
 {
     system("cls || clear");
-    double bmiScore;
+    double bmiScore = bioUser.bmiScore;
     int finalDate;
     int finalMonth;
     int finalYear;
@@ -258,7 +258,7 @@ int jQuiz()
 void calculateRisk(int jQuiz)
 {
     system("cls || clear");
-    double bmiScore;
+    double bmiScore = bioUser.bmiScore;
     int finalDate;
     int finalMonth;
     int finalYear;

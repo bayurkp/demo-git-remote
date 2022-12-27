@@ -19,6 +19,7 @@ void signIn() {
     char tempGender;
     int  tempHeight;
     int  tempWeight;
+    char tempBMICategory[100];
 
     printf(BOLD "Sign In\n" BOLD_END);
     printf("---------------\n");
@@ -55,6 +56,7 @@ void signIn() {
             bioUser.gender     = tempGender;
             bioUser.height     = tempHeight;
             bioUser.weight     = tempWeight;
+            bioUser.bmiScore   = calculateBMI(bioUser.height, bioUser.weight, tempBMICategory);
             break;
         }
     } while(!feof(profileFile));
